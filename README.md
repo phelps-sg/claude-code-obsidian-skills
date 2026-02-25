@@ -2,7 +2,7 @@
 
 A set of [Claude Code](https://claude.ai/claude-code) skills that turn an Obsidian vault into a shared knowledge base for human and AI collaboration on software projects.
 
-These skills are companion material for the blog post [A Shared Memory for Claude Code: Using Obsidian to Organise Human and AI Knowledge](https://sphelps.substack.com/).
+These skills are companion material for the blog post [A Shared Memory for Claude Code: Using Obsidian to Organise Human and AI Knowledge](https://sphelps.substack.com/p/a-shared-memory-for-claude-code).
 
 ## What's included
 
