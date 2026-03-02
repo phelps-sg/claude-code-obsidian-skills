@@ -28,15 +28,18 @@ The skills define *how* to read and write the vault, but you also need to tell t
 ```markdown
 # IMPORTANT: Vault before code
 
+A shared Obsidian vault at `~/Documents/obsidian-vault/` serves as persistent
+memory across sessions and projects. Use the `/pkm` skill to read and write
+notes.
+
 Before exploring code for any architectural, domain, or design question, ALWAYS
-search the Obsidian vault first (`~/Documents/obsidian-vault/`). The vault
-contains accumulated context — architecture notes, decision records, prior
-investigations, and domain knowledge — that prevents redundant code trawling.
-Do NOT launch Explore agents or grep the codebase until you have checked the
-vault for existing notes on the topic.
+search the vault first. It contains accumulated context — architecture notes,
+decision records, prior investigations, and domain knowledge — that prevents
+redundant code trawling. Do NOT launch Explore agents or grep the codebase
+until you have checked the vault for existing notes on the topic.
 ```
 
-**Why this matters**: Without an explicit instruction, the agent will default to exploring the codebase directly. A vault with accumulated context is often faster and more comprehensive than ad-hoc code searches, but the agent needs to be told to check it first. Place this instruction near the top of your `CLAUDE.md` so it's read with highest priority.
+**Why this matters**: Without an explicit instruction, the agent will default to exploring the codebase directly. A vault with accumulated context is often faster and more comprehensive than ad-hoc code searches, but the agent needs to be told to check it first. Place this instruction near the top of your `CLAUDE.md` so it's read with highest priority. Mentioning the `/pkm` skill ensures the agent knows *how* to interact with the vault, not just that it exists.
 
 ## Adapting to your stack
 
