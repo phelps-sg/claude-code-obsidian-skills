@@ -21,6 +21,23 @@ These skills are companion material for the blog post [A Shared Memory for Claud
 4. For the External Sync skill, replace the Notion MCP tool references with whatever API your external source uses.
 5. For the WIP Dashboard skill, replace the GitHub repo references with your own.
 
+## Recommended CLAUDE.md configuration
+
+The skills define *how* to read and write the vault, but you also need to tell the agent *when* to use it. Add the following to your `CLAUDE.md` (project-level or `~/.claude/CLAUDE.md` for global):
+
+```markdown
+# IMPORTANT: Vault before code
+
+Before exploring code for any architectural, domain, or design question, ALWAYS
+search the Obsidian vault first (`~/Documents/obsidian-vault/`). The vault
+contains accumulated context — architecture notes, decision records, prior
+investigations, and domain knowledge — that prevents redundant code trawling.
+Do NOT launch Explore agents or grep the codebase until you have checked the
+vault for existing notes on the topic.
+```
+
+**Why this matters**: Without an explicit instruction, the agent will default to exploring the codebase directly. A vault with accumulated context is often faster and more comprehensive than ad-hoc code searches, but the agent needs to be told to check it first. Place this instruction near the top of your `CLAUDE.md` so it's read with highest priority.
+
 ## Adapting to your stack
 
 These skills were extracted from a real working setup and anonymised. You will need to customise:

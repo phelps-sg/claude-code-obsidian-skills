@@ -121,6 +121,7 @@ Use the daily note to capture actionable items that should be done later but not
     1. Read the most recent daily note (`YYYY-MM-DD.md`, sorted descending). If it is brief, read the previous daily note too. Go back up to 3 daily notes to find enough session context.
     2. Run a quick tag-line grep (`^#` across the vault) to get a holistic picture of how projects, services, and libraries interrelate.
     3. Check for open backlog items.
+- **Before exploring code** — when investigating an architectural, domain, or design question, ALWAYS search the vault first. The vault often contains prior investigations, decision records, and accumulated context that makes code exploration targeted rather than aimless. Do not launch code search agents until you have checked for existing notes on the topic.
 - Working on something that might have been explored before
 - Needing context about architecture or domain concepts
 
